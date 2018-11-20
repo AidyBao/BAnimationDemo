@@ -12,6 +12,7 @@
 		7A02D0CE219BF1EC0081089B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A02D0CC219BF1EC0081089B /* Main.storyboard */; };
 		7A02D0D0219BF1ED0081089B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A02D0CF219BF1ED0081089B /* Assets.xcassets */; };
 		7A02D0D3219BF1ED0081089B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A02D0D1219BF1ED0081089B /* LaunchScreen.storyboard */; };
+		7A02D0DB219BFD6D0081089B /* fruitsImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A02D0DA219BFD6D0081089B /* fruitsImages.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,8 @@
 		7A02D0CF219BF1ED0081089B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A02D0D2219BF1ED0081089B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A02D0D4219BF1ED0081089B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A02D0DA219BFD6D0081089B /* fruitsImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = fruitsImages.xcassets; sourceTree = "<group>"; };
+		7A5F1975219E904A00A2283E /* BAnimationDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BAnimationDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +61,10 @@
 				7A02D0CA219BF1EC0081089B /* ViewController.swift */,
 				7A02D0CC219BF1EC0081089B /* Main.storyboard */,
 				7A02D0CF219BF1ED0081089B /* Assets.xcassets */,
+				7A02D0DA219BFD6D0081089B /* fruitsImages.xcassets */,
 				7A02D0D1219BF1ED0081089B /* LaunchScreen.storyboard */,
 				7A02D0D4219BF1ED0081089B /* Info.plist */,
+				7A5F1975219E904A00A2283E /* BAnimationDemo-Bridging-Header.h */,
 			);
 			path = BAnimationDemo;
 			sourceTree = "<group>";
@@ -96,6 +101,7 @@
 				TargetAttributes = {
 					7A02D0C4219BF1EC0081089B = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -122,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A02D0DB219BFD6D0081089B /* fruitsImages.xcassets in Resources */,
 				7A02D0D3219BF1ED0081089B /* LaunchScreen.storyboard in Resources */,
 				7A02D0D0219BF1ED0081089B /* Assets.xcassets in Resources */,
 				7A02D0CE219BF1EC0081089B /* Main.storyboard in Resources */,
@@ -282,6 +289,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BAnimationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -290,6 +298,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.MQ.BAnimationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BAnimationDemo/BAnimationDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,6 +309,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BAnimationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -307,6 +318,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.MQ.BAnimationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BAnimationDemo/BAnimationDemo-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

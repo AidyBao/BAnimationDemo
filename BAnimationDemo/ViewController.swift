@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var bgImgV: UIImageView!
+    @IBOutlet weak var titleView: UIView!
     
     @IBOutlet weak var hbBgView: UIView!
     @IBOutlet weak var hbImgV: UIImageView!
@@ -21,12 +22,16 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var hbjbImgV: UIImageView!
     
+    @IBOutlet weak var getMoneyView: UIView!
     
     @IBOutlet weak var moneyLB1: UILabel!
     @IBOutlet weak var moneyLB2: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.getMoneyView.isHidden = true
+        self.titleView.isHidden = true
         
         self.hbjbImgV.bringSubviewToFront(self.closeImgV)
         
@@ -37,10 +42,11 @@ class ViewController: UIViewController {
         self.hbTapPosion()
         self.hbTapScale()
         
-        
-        
-        
         self.open()
+        
+//        self.setTitleAnimation()
+//
+//        self.setGetMoneyViewAnimation()
         
 //        self.lipFirstOpenAnimation()
         
@@ -168,6 +174,13 @@ class ViewController: UIViewController {
 //            let rotate = CATransform3DMakeRotation(CGFloat.pi, 1, 0, 0)
 //            self.gaiziImgV.layer.transform = CATransform3DConcat(rotate, transformConcat)
             self.hbBgView.insertSubview(self.closeImgV, aboveSubview: self.hbImgV)
+            
+            self.getMoneyView.isHidden = false
+            self.titleView.isHidden = false
+            
+            self.setTitleAnimation()
+            
+            self.setGetMoneyViewAnimation()
         }
     }
     
@@ -182,10 +195,29 @@ class ViewController: UIViewController {
         self.moneyImgV.layer.add(positionAnim, forKey: nil)
     }
     
+    func setTitleAnimation() {
+        let scaleAnim = CABasicAnimation(keyPath: "transform.scale")
+        scaleAnim.fromValue = 0
+        scaleAnim.toValue = 1.0
+        scaleAnim.duration = 1
+        scaleAnim.isRemovedOnCompletion = true
+//        scaleAnim.beginTime = CACurrentMediaTime() + 2
+        self.titleView.layer.add(scaleAnim, forKey: nil)
+    }
+    
+    func setGetMoneyViewAnimation() {
+        let scaleAnim = CABasicAnimation(keyPath: "transform.scale")
+        scaleAnim.fromValue = 0
+        scaleAnim.toValue = 1
+        scaleAnim.duration = 1
+        scaleAnim.isRemovedOnCompletion = true
+//        scaleAnim.beginTime = CACurrentMediaTime() + 2
+        self.getMoneyView.layer.add(scaleAnim, forKey: nil)
+    }
+    
     func stopAnimation() {
         self.hbBgView.layer.removeAllAnimations()
     }
-
 }
 
 extension ViewController: CAAnimationDelegate {

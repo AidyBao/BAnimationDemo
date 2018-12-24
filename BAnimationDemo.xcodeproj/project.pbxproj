@@ -13,6 +13,8 @@
 		7A02D0D0219BF1ED0081089B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A02D0CF219BF1ED0081089B /* Assets.xcassets */; };
 		7A02D0D3219BF1ED0081089B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A02D0D1219BF1ED0081089B /* LaunchScreen.storyboard */; };
 		7A02D0DB219BFD6D0081089B /* fruitsImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A02D0DA219BFD6D0081089B /* fruitsImages.xcassets */; };
+		7A7B50F721D08279005B2C41 /* BBMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7B50F621D08279005B2C41 /* BBMainViewController.swift */; };
+		7A7B50F921D088CE005B2C41 /* BBRedPacketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7B50F821D088CE005B2C41 /* BBRedPacketsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		7A02D0D4219BF1ED0081089B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A02D0DA219BFD6D0081089B /* fruitsImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = fruitsImages.xcassets; sourceTree = "<group>"; };
 		7A5F1975219E904A00A2283E /* BAnimationDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BAnimationDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		7A7B50F621D08279005B2C41 /* BBMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBMainViewController.swift; sourceTree = "<group>"; };
+		7A7B50F821D088CE005B2C41 /* BBRedPacketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBRedPacketsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 			children = (
 				7A02D0C8219BF1EC0081089B /* AppDelegate.swift */,
 				7A02D0CA219BF1EC0081089B /* ViewController.swift */,
+				7A7B50F621D08279005B2C41 /* BBMainViewController.swift */,
+				7A7B50F821D088CE005B2C41 /* BBRedPacketsViewController.swift */,
 				7A02D0CC219BF1EC0081089B /* Main.storyboard */,
 				7A02D0CF219BF1ED0081089B /* Assets.xcassets */,
 				7A02D0DA219BFD6D0081089B /* fruitsImages.xcassets */,
@@ -142,8 +148,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A7B50F921D088CE005B2C41 /* BBRedPacketsViewController.swift in Sources */,
 				7A02D0CB219BF1EC0081089B /* ViewController.swift in Sources */,
 				7A02D0C9219BF1EC0081089B /* AppDelegate.swift in Sources */,
+				7A7B50F721D08279005B2C41 /* BBMainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
